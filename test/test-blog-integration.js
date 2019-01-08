@@ -162,7 +162,7 @@ describe('BlogPosts API resource', function() {
           expect(resBlogPost.author).to.equal(post.author);
           expect(resBlogPost.title).to.equal(post.title);
           expect(resBlogPost.content).to.equal(post.content);
-          //expect(resBlogPost.created).to.equal(post.created);
+          expect(new Date(resBlogPost.created)).to.deep.equal(post.created);
         });
     });
   });
