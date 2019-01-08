@@ -1,4 +1,8 @@
 language: node_js
 node_js: node
-services:
-- mongodb
+deploy:
+  provider: heroku
+  api_key:9897aa2f-0491-495e-a49c-b85f90d84a05
+   
+  on:
+    repo: jhull1/blog-app-challenge-mongoose-solution
